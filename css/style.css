@@ -1,0 +1,72 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{ margin: 0; padding: 0;}
+table{ border-collapse: collapse; border-spacing: 0;}
+fieldset, img{ border: 0;}
+address, caption, cite, code, dfn, var{ font-style: normal; font-weight: normal;}
+ol, ul{ list-style: none;}
+caption, th{ text-align: left;}
+h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
+q:before, q:after{ content: '';}
+abbr, acronym{ border: 0;}
+
+html{ overflow-y: scroll;}
+body{ background: white; color: black; font: 25px/1.5 Merriweather, Georgia, serif;}
+a{ color: #449fdb; cursor: pointer; text-decoration: none;}
+a:hover{ text-decoration: underline;}
+img{ max-width: 100%;}
+
+/* Fonts */
+
+#title, #barbie-text{ font-family: Lato, Arial, sans-serif;}
+#volume, #barbie-title{ font-family: Lora, Georgia, serif;}
+#feature-title{ font-family: Oswald, Arial, sans-serif;}
+
+/* Shared */
+
+#logo{ overflow: hidden; text-indent: -290486px;}
+
+/* Common */
+
+.wrap{ margin: 0 auto; position: relative; width: 960px;}
+
+/* Header */
+
+#title-background{ background: #cdc9dd; height: 700px; left: 0; margin-left: -60px; position: absolute; top: 0; width: 50%;}
+#barbie-background{ background: url(barbie-floor.png) repeat-x center top; height: 310px; left: 0; margin-left: -60px; position: absolute; top: 700px; width: 50%;}
+#title{ color: white; font-size: 279px; font-weight: 100; letter-spacing: 0.04em; line-height: 1; position: absolute; text-transform: uppercase; z-index: 10;}
+#volume{ color: #b0aeb8; font-size: 12px; letter-spacing: 0.2em; position: absolute; right: 0; top: 140px; text-transform: uppercase;}
+#feature{ float: right; margin-top: 530px; position: relative; width: 510px;}
+#feature-image{ position: relative;}
+#feature-image-shadow{ background: url(feature-image-shadow.png) no-repeat 0 0; height: 46px; width: 543px;}
+#feature-shield{ background: url(feature-shield.png) no-repeat 0 0; height: 188px; width: 411px;}
+#feature-label{ color: #cbb8a0; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;}
+#feature-title{ color: #fdcd84; font-size: 75px; line-height: 79px; text-transform: uppercase;}
+#feature-text{ font-size: 25px; font-weight: 100; letter-spacing: -0.02em; line-height: 33px;}
+#barbie{ background: url(barbie-floor.png) repeat-x center top; float: left; margin-top: 700px; padding-top: 92px; position: relative; text-align: center; width: 420px;}
+#barbie-image{ left: 0; position: absolute; top: -268px;}
+#barbie-title{ color: #5f5d66; font-size: 36px; font-style: italic; font-weight: bold;}
+#barbie-text{ color: #6e6c77; font-size: 19px; letter-spacing: -0.02em; line-height: 27px;}
+
+
+/* CSS 3 */
+
+a, .post-info{
+  transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
+  -moz-transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
+  -ms-transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
+  -o-transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
+  -webkit-transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
+}
+
+.post{
+
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 1040px) {
+}
+
+@media only screen and (max-width: 700px) {
+}
+
+
