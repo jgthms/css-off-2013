@@ -16,9 +16,9 @@ img{ max-width: 100%;}
 
 /* Fonts */
 
-#title, #barbie-text{ font-family: Lato, Arial, sans-serif;}
+#title, #barbie-text, #staying-afloat-text, #bullets-title em{ font-family: Lato, Arial, sans-serif;}
 #volume, #barbie-title{ font-family: Lora, Georgia, serif;}
-#feature-title{ font-family: Oswald, Arial, sans-serif;}
+#feature-title, #staying-afloat-title, #bullets-title strong, #bullets-list{ font-family: Oswald, Arial, sans-serif;}
 
 /* Shared */
 
@@ -45,6 +45,35 @@ img{ max-width: 100%;}
 #barbie-image{ left: 0; position: absolute; top: -268px;}
 #barbie-title{ color: #5f5d66; font-size: 36px; font-style: italic; font-weight: bold;}
 #barbie-text{ color: #6e6c77; font-size: 19px; letter-spacing: -0.02em; line-height: 27px;}
+
+#staying-afloat{ clear: both; float: left; text-align: right; width: 160px;}
+#staying-afloat-title,
+#staying-afloat-text{ padding-right: 20px;}
+#staying-afloat-title{ color: #24795a; font-size: 21px; letter-spacing: -0.02em;}
+#staying-afloat-text{ color: #464646; font-size: 14px; letter-spacing: -0.02em; line-height: 19px;}
+
+#bullets{ float: right; width: 800px;}
+#bullets-title{ border: solid #e5e5e5; border-width: 1px 0; font-size: 12px; padding: 1em 0; text-align: center; text-transform: uppercase;}
+#bullets-title strong{ color: #a97d35; font-size: 15px; font-weight: normal; letter-spacing: 0.04em;}
+#bullets-title em{ color: #e0c167; font-style: normal; font-weight: bold; letter-spacing: 0.08em;}
+#bullets-list{ padding-top: 16px;}
+#bullets-list li{ box-shadow: 1px 0 0 #e5e5e5; float: left; padding-bottom: 80px; position: relative; width: 160px;}
+#bullets-list li:last-child{ box-shadow: none;}
+#bullets-list img{ position: relative; z-index: 10;}
+#bullets-list p{ bottom: 0; color: #e0e0e0; font-size: 28px; left: 0; letter-spacing: -0.025em; line-height: 1; position: absolute; text-align: center; width: 100%;}
+#bullets-list p span{ display: block;}
+#bullets-list .bullet-size{ font-size: 79px;}
+#bullets-list .bullet-name{ text-transform: uppercase;}
+#bullets-list .bullet-weight{ font-size: 32px;}
+#bullet-russian-154 .bullet-size{ font-size: 31px;}
+#bullet-russian-154 .bullet-name{ font-size: 40px;}
+#bullet-russian-154 .bullet-weight{ font-size: 39px;}
+#bullet-thumper-220 .bullet-size,
+#bullet-thumper-240 .bullet-size{ font-size: 87px;}
+#bullet-thumper-220 .bullet-name,
+#bullet-thumper-240 .bullet-name{ font-size: 38px;}
+#bullet-thumper-220 .bullet-weight{ font-size: 40px;}
+#bullet-thumper-240 .bullet-weight{ font-size: 32px;}
 
 
 /* CSS 3 */
