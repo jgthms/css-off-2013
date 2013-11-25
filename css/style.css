@@ -9,7 +9,7 @@ q:before, q:after{ content: '';}
 abbr, acronym{ border: 0;}
 
 html{ overflow-y: scroll;}
-body{ background: white; color: black; font: 25px/1.5 Merriweather, Georgia, serif;}
+body{ background: white; color: black; font: 16px/1 Merriweather, Georgia, serif;}
 a{ color: #449fdb; cursor: pointer; text-decoration: none;}
 a:hover{ text-decoration: underline;}
 img{ max-width: 100%;}
@@ -17,12 +17,12 @@ img{ max-width: 100%;}
 /* Fonts */
 
 #title, #barbie-text, #staying-afloat-text, #bullets-title em{ font-family: Lato, Arial, sans-serif;}
-#volume, #barbie-title{ font-family: Lora, Georgia, serif;}
-#feature-title, #staying-afloat-title, #bullets-title strong, #bullets-list{ font-family: Oswald, Arial, sans-serif;}
+#volume, #barbie-title, #transformers-summary{ font-family: Lora, Georgia, serif;}
+#feature-title, #staying-afloat-title, #bullets-title strong, #bullets-list, #abbey-road-title, #immigration-title, #immigration-subtitle, #transformers{ font-family: Oswald, Arial, sans-serif;}
 
 /* Shared */
 
-#logo{ overflow: hidden; text-indent: -290486px;}
+#transformers-rating-bar-value{ overflow: hidden; text-indent: -290486px;}
 
 /* Common */
 
@@ -32,7 +32,7 @@ img{ max-width: 100%;}
 
 #title-background{ background: #cdc9dd; height: 700px; left: 0; margin-left: -60px; position: absolute; top: 0; width: 50%;}
 #barbie-background{ background: url(barbie-floor.png) repeat-x center top; height: 310px; left: 0; margin-left: -60px; position: absolute; top: 700px; width: 50%;}
-#title{ color: white; font-size: 279px; font-weight: 100; letter-spacing: 0.04em; line-height: 1; position: absolute; text-transform: uppercase; z-index: 10;}
+#title{ color: white; font-size: 279px; font-weight: 200; letter-spacing: 0.04em; line-height: 1; position: absolute; text-transform: uppercase; z-index: 10;}
 #volume{ color: #b0aeb8; font-size: 12px; letter-spacing: 0.2em; position: absolute; right: 0; top: 140px; text-transform: uppercase;}
 #feature{ float: right; margin-top: 530px; position: relative; width: 510px;}
 #feature-image{ position: relative;}
@@ -40,7 +40,7 @@ img{ max-width: 100%;}
 #feature-shield{ background: url(feature-shield.png) no-repeat 0 0; height: 188px; width: 411px;}
 #feature-label{ color: #cbb8a0; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;}
 #feature-title{ color: #fdcd84; font-size: 75px; line-height: 79px; text-transform: uppercase;}
-#feature-text{ font-size: 25px; font-weight: 100; letter-spacing: -0.02em; line-height: 33px;}
+#feature-text{ font-size: 25px; font-weight: 200; letter-spacing: -0.02em; line-height: 33px;}
 #barbie{ background: url(barbie-floor.png) repeat-x center top; float: left; margin-top: 700px; padding-top: 92px; position: relative; text-align: center; width: 420px;}
 #barbie-image{ left: 0; position: absolute; top: -268px;}
 #barbie-title{ color: #5f5d66; font-size: 36px; font-style: italic; font-weight: bold;}
@@ -75,6 +75,47 @@ img{ max-width: 100%;}
 #bullet-thumper-220 .bullet-weight{ font-size: 40px;}
 #bullet-thumper-240 .bullet-weight{ font-size: 32px;}
 
+#abbey-road{ clear: both;}
+#abbey-road-title{ background: #524741; box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2); color: white; font-size: 49px; padding: 36px; position: relative; text-align: center; text-transform: uppercase;}
+#abbey-road-image img{ display: block;}
+#abbey-road-text{ background: #71625a; color: white; font-size: 26px; font-weight: 200; letter-spacing: 0.02em; line-height: 35px; padding: 25px;}
+#abbey-road-text small{ display: block; font-size: 18px; margin-top: 1em; opacity: 0.5;}
+#abbey-road-text small a{ color: white;}
+
+#immigration{ float: left; width: 720px;}
+#immigration-people{ height: 152px; position: relative;}
+#immigration-people img{ float: left; position: relative;}
+#immigration-people img:nth-child(2){ left: 1px;}
+#immigration-people img:nth-child(3){ left: 4px;}
+#immigration-people img:nth-child(4){ left: 18px;}
+#immigration-title{ font-size: 82px; padding: 20px 20px 20px 0; text-transform: uppercase;}
+#immigration-subtitle{ border: solid black; border-width: 21px 0 3px; font-size: 39px; padding: 20px 0;}
+#immigration-content{ font-size: 22px; font-weight: 200; letter-spacing: -0.02em; line-height: 29px;}
+#immigration-content p{ display: inline;}
+#immigration-content p:after{ content: ' • '; font-size: 41px; vertical-align: bottom;}
+#immigration-content p:last-child:after{ display: none;}
+#immigration-content strong{ font-weight: 800;}
+
+#transformers{ background: #3a83bb; color: white; float: right; margin-top: 81px; text-align: center; text-transform: uppercase; width: 225px;}
+#transformers-image{ margin-top: -66px; position: relative;}
+#transformers-image img{ position: relative; z-index: 10;}
+#transformers-image:after{ background: url(bluray-shadow.png) no-repeat 0 0; bottom: -120px; content: ' '; height: 190px; position: absolute; right: -40px; width: 298px;}
+#transformers-title{ border-bottom: 8px solid #619bc8; font-size: 31px; margin: 0 15px; position: relative; z-index: 10;}
+#transformers-title span{ font-size: 21px;}
+#transformers-summary{ font-size: 16px; font-style: italic; letter-spacing: -0.02em; line-height: 24px; margin: 20px 15px; text-align: left; text-transform: none;}
+#transformers-rating{ border: dashed #234f70; border-width: 2px 0; box-shadow: 0 5px 0 #3476a8 inset,  0 -5px 0 #3476a8 inset; padding: 30px 0 30px 15px;}
+#transformers-rating-label{ float: left; font-size: 14px; opacity: 0.3;}
+#transformers-rating-label span{ display: block; font-size: 32px;}
+#transformers-rating-value{ float: left; font-size: 54px; font-weight: normal;}
+#transformers-rating-bar{ background: #619cc9; clear: both; height: 8px; margin-right: 15px; position: relative;}
+#transformers-rating-bar-value{ background: white; height: 100%; left: 0; position: absolute; top: 0; width: 20%;}
+#transformers-ticket{ overflow: hidden; padding: 15px 0; position: relative;}
+#transformers-ticket:after{ background: white; border-radius: 14px; bottom: -14px; content: ' '; display: block; height: 28px; left: 50%; margin-left: -14px; position: absolute; width: 28px;}
+#transformers-ticket-title{ background: #619cc9; color: #88aed1; height: 13px; font-size: 14px; letter-spacing: 0.02em; line-height: 13px; margin: 0 10px;}
+#transformers-ticket-title span{ background: #3a83bb; padding: 0 0.5em;}
+#transformers-ticket-venue{ font-size: 27px;}
+#transformers-ticket-location{ color: #88aed1; font-size: 28px;}
+#transformers-ticket-date{ font-size: 39px;}
 
 /* CSS 3 */
 
