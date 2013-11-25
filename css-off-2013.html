@@ -10,21 +10,24 @@
 		<link rel="icon" href="favicon.ico">
 	</head>
 	<body>
-		<header id="masthead">
+		<div id="preview" style="display: block;"></div>
+		<div id="masthead">
 			<div id="title-background"></div>
 			<div id="barbie-background"></div>
 			<div class="wrap">
-				<h1 id="title">CSS Off</h1>
-				<p id="volume">Volume 3 - September 2013</p>
+				<header>
+					<h1 id="title">CSS Off</h1>
+					<p id="volume">Volume 3 - September 2013</p>
+				</header>
 				<div id="feature">
 					<div id="feature-image">
-						<div id="feature-image-shadow"></div>
 						<img src="img/henry-peach-robinson-fading-away.png" alt="Henry Peach Robinson's painting 'Fading Away'">
 					</div>
-					<div id="feature-shield"></div>
-					<p id="feature-label">Feature</p>
-					<h2 id="feature-title">Positioning Relatives</h2>
-					<p id="feature-text">In 1958, English pictorial photographer Henry Peach Robinson created the world’s first photomontage by combining five different negatives to make one complete print of a young girl on her deathbed. “Fading Away”—Robinson’s first and most famous composite photo—depicts a young girl dying of consumption and was controversial when it was exhibited, with many believing it was not a suitable subject for photography.</p>
+					<div id="feature-content">
+						<p id="feature-label">Feature</p>
+						<h2 id="feature-title">Positioning Relatives</h2>
+						<p id="feature-text">In 1958, English pictorial photographer Henry Peach Robinson created the world&rsquo;s first photomontage by combining five different negatives to make one complete print of a young girl on her deathbed. &ldquo;Fading Away&rdquo;&mdash;Robinson&rsquo;s first and most famous composite photo&mdash;depicts a young girl dying of consumption and was controversial when it was exhibited, with many believing it was not a suitable subject for photography.</p>
+					</div>
 				</div>
 				<div id="barbie">
 					<div id="barbie-image">
@@ -33,8 +36,9 @@
 					<h3 id="barbie-title">Box Model</h3>
 					<p id="barbie-text">The Barbie doll was invented in 1959 by Ruth Handler (co-founder of Mattel), whose own daughter was called Barbara. Barbie was introduced to the world at the American Toy Fair in New York City. Barbie's job was teenage fashion doll. The full name of the first doll was Barbie Millicent Roberts, from Willows, Wisconsin.</p>
 				</div>
+				<div style="clear: both;"></div>
 			</div>
-		</header>
+		</div>
 		<div class="wrap">
 			<aside id="staying-afloat">
 				<h3 id="staying-afloat-title">Staying afloat</h3>
@@ -95,7 +99,7 @@
 					<img src="img/abbey-road-cover.png" alt="The Beatles' 'Abbey Road' album cover">
 				</div>
 				<p id="abbey-road-text">
-					Abbey Road is a thoroughfare located in the borough of Camden and the City of Westminster in London, running roughly northwest to southeast through St. John’s Wood, near Lord’s Cricket Ground. It is part of the B507. This road is best known for the Abbey Road Studios and the 1969 album, Abbey Road, by The Beatles.
+					Abbey Road is a thoroughfare located in the borough of Camden and the City of Westminster in London, running roughly northwest to southeast through St. John&rsquo;s Wood, near Lord&rsquo;s Cricket Ground. It is part of the B507. This road is best known for the Abbey Road Studios and the 1969 album, Abbey Road, by The Beatles.
 					<small>Photo: <a href="goo.gl/h44dc9">goo.gl/h44dc9</a></small>
 				</p>
 			</section>
@@ -109,10 +113,10 @@
 				<h2 id="immigration-title">Border Bottom Line</h2>
 				<h3 id="immigration-subtitle">Awful immigration laws from around the world.</h3>
 				<div id="immigration-content">
-					<p><strong>Italy</strong> penalizes illegal immigrants with a fine of €5,000-10,000 and allows immigration officials to detain them for up to 6 months.</p>
+					<p><strong>Italy</strong> penalizes illegal immigrants with a fine of &euro;5,000-10,000 and allows immigration officials to detain them for up to 6 months.</p>
 					<p><strong>Switzerland</strong> immediately deports all convicted criminals from other countries and potentially even their family members.</p>
 					<p><strong>Australia</strong> detains all non-citizens without a valid visa.</p>
-					<p><strong>Japan</strong> is allowed to pay $3,000 to each unemployed Latin American immigrant of Japanese descent and $2,000 to each of that unemployed worker’s family members to return to their country of origin.</p>
+					<p><strong>Japan</strong> is allowed to pay $3,000 to each unemployed Latin American immigrant of Japanese descent and $2,000 to each of that unemployed worker&rsquo;s family members to return to their country of origin.</p>
 					<p>The <strong>United Arab Emirates</strong> prohibits foreigners from engaging in any sort of labor union-like activity, resulting in harsh living conditions, 80-hour work weeks, back-breaking manual labor, and below-minimum-wage pay.</p>
 				</div>
 			</section>
@@ -123,11 +127,8 @@
 				<h3 id="transformers-title">Transformers <span>Revenge of the fallen</span></h3>
 				<p id="transformers-summary">A noisy, underplotted, and overlong special effects extravaganza that lacks a human touch.</p>
 				<div id="transformers-rating">
-					<p id="transformers-rating-label">
-						Rotten Tomato
-						<span>Rating</span>
-					</p>
-					<strong id="transformers-rating-value">20%</strong>
+					<p id="transformers-rating-label">Rotten Tomato <span>Rating</span></p>
+					<strong id="transformers-rating-value">20<span>%</span></strong>
 					<div id="transformers-rating-bar">
 						<p id="transformers-rating-bar-value">20%</p>
 					</div>
@@ -139,6 +140,22 @@
 					<p id="transformers-ticket-date">June 23, 2011</p>
 				</div>
 			</section>
+			<section id="overflow">
+				<h2 id="overflow-title"><img src="img/overflow.png" alt="'Overflow' text floating in water"></h2>
+				<div id="overflow-content">
+					<p>On the night of Aug 8, 1975, a line of people frantically piled sandbags atop Henan Province's Banqiao Dam while being battered by the worst storm ever recorded in the region. They were in a race with the rapidly rising Ru River to save the dam and the millions of people that lay sleeping downstream. It was a race they were about to lose.</p>
+					<p>Just after 1:00 am, the sky cleared and stars emerged from behind the storm clouds. There was an eerie calm as someone yelled, &quot;The water level is going down! The flood is retreating!&quot;</p>
+					<p>There was little chance to enjoy that calm. One survivor recalled that a few seconds later it &quot;sounded like the sky was collapsing and the earth was cracking.&quot; The equivalent of 280,000 Olympic-sized swimming pools burst through the crumbling dam, taking with it entire towns and as many as 171,000 lives.</p>
+				</div>
+			</section>
+			<footer>
+				<p><strong>2013 CSSOff</strong>, Volume 3</p>
+				<address>
+					<strong>Route Gregory</strong>, Building 31<br>
+					01630 Pr&eacute;vessin-Mo&euml;ns, France<br>
+					+41 22 767 61 11
+				</address>
+			</footer>
 		</div>
 	</body>
 </html>
