@@ -175,91 +175,295 @@ footer p strong{ color: #666;}
 #transformers *::selection{ background: white; color: #3a83bb;}
 #overflow *::selection{ background: #5e6c74; color: white;}
 
-img, #bullets li p, #transformers-title, #transformers-rating, #transformers-ticket *, #overflow-content p{
-  transition: all 250ms ease-out;
-  -moz-transition: all 250ms ease-out;
-  -ms-transition: all 250ms ease-out;
-  -o-transition: all 250ms ease-out;
-  -webkit-transition: all 250ms ease-out;
-}
+::-moz-selection{ background: #cdc9dd; color: white;}
+#title::-moz-selection, #title span::-moz-selection, #barbie *::-moz-selection{ background: white; color: #cdc9dd;}
+#feature *::-moz-selection{ background: #fdcd84; color: white;}
+#staying-afloat *::-moz-selection{ background: #24795a; color: white;}
+#bullets *::-moz-selection{ background: #e0c167; color: white;}
+#abbey-road *::-moz-selection{ background: white; color: #71625a;}
+#immigration *::-moz-selection{ background: black; color: white;}
+#transformers *::-moz-selection{ background: white; color: #3a83bb;}
+#overflow *::-moz-selection{ background: #5e6c74; color: white;}
 
-#abbey-road-map:before, #abbey-road-map:after, #abbey-road-map img{
-  transition: all 125ms ease-out;
-  -moz-transition: all 125ms ease-out;
-  -ms-transition: all 125ms ease-out;
-  -o-transition: all 125ms ease-out;
-  -webkit-transition: all 125ms ease-out;
-}
-
-a, footer, footer *{
-  transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
-  -moz-transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
-  -ms-transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
-  -o-transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
-  -webkit-transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;
-}
-
-
-#immigration-content p, #transformers-rating-value{
-  transition: opacity 250ms ease-out;
-  -moz-transition: opacity 250ms ease-out;
-  -ms-transition: opacity 250ms ease-out;
-  -o-transition: opacity 250ms ease-out;
-  -webkit-transition: opacity 250ms ease-out;
-}
-
-#feature-image img{
-  -webkit-transform: rotate(-3.8deg);
-}
-
-#transformers-rating-value span{
-  -webkit-transform: scale(0.8, 1);
-}
-
-#overflow-content p:first-child{
-  -webkit-transform: rotate(2.1deg);
-}
-
-#overflow-content p:nth-child(2){
-  -webkit-transform: rotate(-0.7deg);
-}
-
-#overflow-content p:last-child{
-  -webkit-transform: rotate(0.9deg);
-}
+img, #bullets li p, #transformers-title, #transformers-rating, #transformers-ticket *, #overflow-content p{ transition: all 250ms ease-out; -webkit-transition: all 250ms ease-out;}
+#abbey-road-map:before, #abbey-road-map:after, #abbey-road-map img{ transition: all 125ms ease-out; -webkit-transition: all 125ms ease-out;}
+a, footer, footer *{ transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out; -webkit-transition: background 250ms ease-out, border 250ms ease-out, color 250ms ease-out;}
+#immigration-content p, #transformers-rating-value{ transition: opacity 250ms ease-out; -webkit-transition: opacity 250ms ease-out;}
+#feature-image img{ transform: rotate(-3.8deg); -webkit-transform: rotate(-3.8deg);}
+#transformers-rating-value span{ transform: scale(0.8, 1); -webkit-transform: scale(0.8, 1);}
+#overflow-content p:first-child{ transform: rotate(2.1deg); -webkit-transform: rotate(2.1deg);}
+#overflow-content p:nth-child(2){ transform: rotate(-0.7deg); -webkit-transform: rotate(-0.7deg);}
+#overflow-content p:last-child{ transform: rotate(0.9deg); -webkit-transform: rotate(0.9deg);}
 
 /* Hover */
 
-#immigration-people:hover img{ margin-top: -80px; padding-bottom: 80px;}
-#immigration-people img:hover{ margin-top: 0; padding-bottom: 0;}
+.stop#staying-afloat img:hover{ transform: rotate(-3.8deg) scale(1.25, 1.25); -webkit-transform: rotate(-3.8deg) scale(1.25, 1.25);}
 
-#bullets li:hover img{ -webkit-transform: scale(1.25, 1.25); bottom: 50px;}
-#bullets li:hover{ color: #e0c167;}
-#bullets li:hover p{ bottom: -50px;}
+.stop#bullets li:hover img{ bottom: 50px; transform: scale(1.25, 1.25); -webkit-transform: scale(1.25, 1.25);}
+.stop#bullets li:hover{ color: #e0c167;}
+.stop#bullets li:hover p{ bottom: -50px;}
 
-#staying-afloat img:hover{ -webkit-transform: rotate(-3.8deg) scale(1.25, 1.25);}
+.stop #abbey-road-map:hover img{ bottom: 5px; right: -7px; transform: rotate(-3.8deg) scale(1.5, 1.5); -webkit-transform: rotate(-3.8deg) scale(1.5, 1.5);}
+.stop #abbey-road-map:hover:after{ bottom: 5px; right: 26px; transform: rotate(-3.8deg) scale(2, 2); -webkit-transform: rotate(-3.8deg) scale(2, 2);}
+.stop #abbey-road-map:hover:before{ bottom: 21px; right: 11px; transform: rotate(-3.8deg) scale(1.25, 1.25); -webkit-transform: rotate(-3.8deg) scale(1.25, 1.25);}
 
-#abbey-road-map:hover img{ -webkit-transform: rotate(-3.8deg) scale(1.5, 1.5); bottom: 5px; right: -7px;}
-#abbey-road-map:hover:after{ -webkit-transform: rotate(-3.8deg) scale(2, 2); bottom: 5px; right: 26px;}
-#abbey-road-map:hover:before{ -webkit-transform: rotate(-3.8deg) scale(1.25, 1.25); bottom: 21px; right: 11px;}
+.stop #immigration-people:hover img{ margin-top: -80px; padding-bottom: 80px;}
+.stop #immigration-people img:hover{ margin-top: 0; padding-bottom: 0;}
+.stop #immigration-content:hover p{ opacity: 0.25;}
+.stop #immigration-content p:hover{ opacity: 1;}
 
-#transformers-image img:hover ~ *{ background: red; opacity: 1;}
-#transformers-title:hover,
-#transformers-rating:hover{ border-color: white;}
-#transformers-rating:hover #transformers-rating-label,
-#transformers-ticket:hover #transformers-ticket-title,
-#transformers-ticket:hover #transformers-ticket-location{ color: white;}
-#transformers-ticket:hover #transformers-ticket-title{ background: white;}
+.stop #transformers-image img:hover ~ *{ background: red; opacity: 1;}
+.stop #transformers-title:hover,
+.stop #transformers-rating:hover{ border-color: white;}
+.stop #transformers-rating:hover #transformers-rating-label,
+.stop #transformers-ticket:hover #transformers-ticket-title,
+.stop #transformers-ticket:hover #transformers-ticket-location{ color: white;}
+.stop #transformers-ticket:hover #transformers-ticket-title{ background: white;}
 
-#immigration-content:hover p{ opacity: 0.25;}
-#immigration-content p:hover{ opacity: 1;}
-
-#overflow-content p:hover{ -webkit-transform: rotate(0deg);}
+.stop #overflow-content p:hover{ transform: rotate(0deg); -webkit-transform: rotate(0deg);}
 
 footer:hover{ border-top-color: #989898;}
 footer p:hover, footer address:hover{ color: #666;}
 
 /* Animations */
+
+@keyframes fade-in{
+  0%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
+
+@keyframes right{
+  0%{ opacity: 0; transform: translateX(-100%);}
+  100%{ opacity: 1; transform: translateX(0);}
+}
+
+@keyframes left{
+  0%{ opacity: 0; transform: translateX(100%);}
+  100%{ opacity: 1; transform: translateX(0);}
+}
+
+@keyframes up{
+  0%{ opacity: 0; transform: translateY(20px);}
+  100%{ opacity: 1; transform: translateY(0);}
+}
+
+@keyframes up-inline{
+  0%{ opacity: 0; top: 20px;}
+  100%{ opacity: 1; top: 0;}
+}
+
+@keyframes down{
+  0%{ opacity: 0; transform: translateY(-20px);}
+  100%{ opacity: 1; transform: translateY(0);}
+}
+
+@keyframes full-down{
+  0%{ opacity: 0; transform: translateY(-100%);}
+  100%{ opacity: 1; transform: translateY(0);}
+}
+
+@keyframes full-up{
+  0%{ opacity: 0; transform: translateY(100%);}
+  100%{ opacity: 1; transform: translateY(0);}
+}
+
+@keyframes rotate-image{
+  0%{ opacity: 0; transform: rotate(0deg) translateY(-20px);}
+  100%{ opacity: 1; transform: rotate(-3.8deg) translateY(0);}
+}
+
+@keyframes scale-x{
+  0%{ opacity: 0; transform: scale(0, 1);}
+  100%{ opacity: 1; transform: scale(1, 1);}
+}
+
+@keyframes scale-y{
+  0%{ opacity: 0; transform: scale(1, 0);}
+  100%{ opacity: 1; transform: scale(1, 1);}
+}
+
+@keyframes grow{
+  0%{ opacity: 0; transform: scale(0, 0);}
+  100%{ opacity: 1; transform: scale(1, 1);}
+}
+
+@keyframes bounce{
+  0%{ transform: translateY(0);}
+  50%{ transform: translateY(-20px);}
+  100%{ transform: translateY(0);}
+}
+
+@keyframes gentle-bounce{
+  0%{ transform: translateY(0);}
+  50%{ transform: translateY(-5px);}
+  100%{ transform: translateY(0);}
+}
+
+@keyframes bounce-shadow{
+  0%{ transform: scale(1, 1);}
+  50%{ transform: scale(0.75, 0.75);}
+  100%{ transform: scale(1, 1);}
+}
+
+@keyframes bounce-fade{
+  0%{ opacity: 1;}
+  50%{ opacity: 0.5;}
+  100%{ opacity: 1;}
+}
+
+@keyframes progress{
+  0%{  width: 0;}
+  100%{ width: 100%;}
+}
+
+@keyframes progress-20{
+  0%{  width: 0;}
+  100%{ width: 20%;}
+}
+
+/* Specific animations */
+
+@keyframes background{
+  0%{ transform: translateX(-100%);}
+  100%{ transform: translateX(0);}
+}
+
+@keyframes boots{
+  0%{ opacity: 0; transform: rotate(15deg) scale(1.25, 1.25);}
+  100%{ opacity: 1; transform: rotate(0deg) scale(1, 1);}
+}
+
+@keyframes bullets-list{
+  0%{ transform: scale(0, 0);}
+  100%{ transform: scale(1, 1);}
+}
+
+@keyframes corner{
+  0%{ opacity: 0; transform: translate(20px, 20px);}
+  100%{ opacity: 1; transform: translate(0, 0);}
+}
+
+@keyframes transformers-title{
+  0%{ border-bottom-color: transparent;}
+  100%{ border-bottom-color: #619bc8;}
+}
+
+@keyframes immigration-borders{
+  0%{ opacity: 0; width: 0;}
+  100%{ opacity: 1; width: 700px;}
+}
+
+@keyframes overflow-1{
+  0%{ opacity: 0; transform: rotate(0deg);}
+  100%{ opacity: 1; transform: rotate(2.1deg);}
+}
+
+@keyframes overflow-2{
+  0%{ opacity: 0; transform: rotate(0deg);}
+  100%{ opacity: 1; transform: rotate(-0.7deg);}
+}
+
+@keyframes overflow-3{
+  0%{ opacity: 0; transform: rotate(0deg);}
+  100%{ opacity: 1; transform: rotate(0.9deg);}
+}
+
+#feature-image:after,
+#feature-content:before,
+#bullets-list li,
+#immigration-people img,
+#immigration-subtitle:before,
+#immigration-subtitle:after,
+#immigration-content p,
+#immigration:after,
+#transformers-image:before,
+#transformers-image:after,
+#transformers-ticket p,
+#transformers-ticket:after,
+#overflow-content p,
+.animated{ animation-duration: 1000ms; animation-fill-mode: both; animation-timing-function: ease;}
+
+.start #title-background{ animation-name: background; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #title{ animation-delay: 250ms; animation-name: right; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #volume{ animation-delay: 500ms; animation-name: left; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #feature-image img{ animation-delay: 1000ms; animation-name: rotate-image;}
+.start #feature-image:after{ animation-delay: 1000ms; animation-name: up;}
+.start #feature-content:before{ animation-delay: 1000ms; animation-name: fade-in;}
+.start #feature-label{ animation-delay: 1250ms; animation-name: down;}
+.start #feature-title{ animation-delay: 1500ms; animation-name: down;}
+.start #feature-text{ animation-delay: 1750ms; animation-name: down;}
+.start #barbie-background{ animation-delay: 1750ms; animation-name: background;}
+.start #barbie-image{ animation-delay: 2000ms; animation-name: down;}
+.start #barbie-title{ animation-delay: 2250ms; animation-name: down;}
+.start #barbie-text{ animation-delay: 2500ms; animation-name: down;}
+.start #staying-afloat-title{ animation-delay: 0ms; animation-name: down;}
+.start #staying-afloat-text{ animation-delay: 250ms; animation-name: down;}
+.start#staying-afloat img{ animation-delay: 500ms; animation-name: boots;}
+.start #bullets-title{ animation-delay: 750ms; animation-name: scale-x; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #bullets-list li{ animation-delay: 1250ms; animation-name: bullets-list; animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+.start #bullets-list li:nth-child(2){ animation-delay: 1500ms;}
+.start #bullets-list li:nth-child(3){ animation-delay: 1750ms;}
+.start #bullets-list li:nth-child(4){ animation-delay: 2000ms;}
+.start #bullets-list li:nth-child(5){ animation-delay: 2250ms;}
+.start #abbey-road-title{ animation-delay: 0ms; animation-name: scale-y; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #abbey-road-image{ animation-delay: 250ms; animation-name: fade-in;}
+.start #abbey-road-map{ animation-delay: 1000ms; animation-name: corner;}
+.start #abbey-road-text{ animation-delay: 750ms; animation-name: down;}
+.start #immigration-people img{ animation-delay: 0ms; animation-name: down;}
+.start #immigration-people img:nth-child(2){ animation-delay: 250ms;}
+.start #immigration-people img:nth-child(3){ animation-delay: 500ms;}
+.start #immigration-people img:nth-child(4){ animation-delay: 750ms;}
+.start #immigration-title,
+.start #immigration-subtitle{ animation-name: scale-y; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #immigration-title{ animation-delay: 750ms;}
+.start #immigration-subtitle{ animation-delay: 1000ms;}
+.start #immigration-subtitle:before,
+.start #immigration-subtitle:after{ animation-name: immigration-borders; animation-timing-function: cubic-bezier(0.8, 0.2, 0.2, 0.8);}
+.start #immigration-subtitle:before{ animation-delay: 1000ms;}
+.start #immigration-subtitle:after{ animation-delay: 1250ms;}
+.start #immigration-content p{ animation-delay: 1500ms; animation-name: up-inline;}
+.start #immigration-content p:nth-child(2){ animation-delay: 1750ms;}
+.start #immigration-content p:nth-child(3){ animation-delay: 2000ms;}
+.start #immigration-content p:nth-child(4){ animation-delay: 2250ms;}
+.start #immigration-content p:nth-child(5){ animation-delay: 2500ms;}
+.start#immigration:after{ animation-delay: 5250ms; animation-name: fade-in;}
+.start#transformers{ animation-delay: 2500ms; animation-name: fade-in;}
+.start #transformers-image img{ animation-delay: 2750ms; animation-name: full-down; animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+.start #transformers-image:before{ animation-delay: 2750ms; animation-name: grow; animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+.start #transformers-image:after{ animation-delay: 2750ms; animation-name: fade-in;}
+.start #transformers-title{ animation-delay: 3500ms; animation-name: transformers-title;}
+.start #transformers-title span,
+.start #transformers-title em{ animation-name: scale-y; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #transformers-title span{ animation-delay: 3000ms;}
+.start #transformers-title em{ animation-delay: 3250ms;}
+.start #transformers-summary{ animation-delay: 3750ms; animation-name: up;}
+.start #transformers-rating{ animation-delay: 4000ms; animation-name: scale-y;}
+.start #transformers-rating-bar-value{ animation-delay: 4250ms; animation-name: progress;}
+.start #transformers-rating-bar-value span{ animation-delay: 4500ms; animation-name: progress-20;}
+.start #transformers-ticket-title,
+.start #transformers-ticket p{ animation-delay: 4500ms; animation-name: scale-y;}
+.start #transformers-ticket p{ animation-delay: 4625ms;}
+.start #transformers-ticket p:nth-child(3){ animation-delay: 4750ms;}
+.start #transformers-ticket p:nth-child(4){ animation-delay: 4875ms;}
+.start #transformers-ticket:after{ animation-delay: 5000ms; animation-name: up;}
+.start #overflow-title{ animation-delay: 0ms; animation-name: up;}
+.start #overflow-content p:first-child{ animation-delay: 250ms; animation-name: overflow-1;}
+.start #overflow-content p:nth-child(2){ animation-delay: 500ms; animation-name: overflow-2;}
+.start #overflow-content p:last-child{ animation-delay: 750ms; animation-name: overflow-3;}
+footer.start{ animation-delay: 0ms; animation-name: scale-y; animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+footer.start p{ animation-delay: 1000ms; animation-name: scale-y; animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+footer.start address{ animation-delay: 1500ms; animation-name: scale-y; animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+
+/* Hover animations */
+
+.stop #transformers-image:hover img,
+.stop #transformers-image:hover:before,
+.stop #transformers-image:hover:after,
+.stop#overflow:hover #overflow-title{ animation-delay: 0ms; animation-iteration-count: infinite; animation-timing-function: linear;}
+.stop #transformers-image:hover img{ animation-name: bounce;}
+.stop#overflow:hover #overflow-title{ animation-duration: 3000ms; animation-name: gentle-bounce;}
+.stop #transformers-image:hover:before{ animation-name: bounce-shadow;}
+.stop #transformers-image:hover:after{ animation-name: bounce-fade;}
 
 @-webkit-keyframes fade-in{
   0%{ opacity: 0;}
@@ -573,7 +777,7 @@ footer.start address{ -webkit-animation-delay: 1500ms; -webkit-animation-name: s
   #volume{ background: white; padding: 1em;}
   #feature{ padding-top: 0;}
   #feature-image{ height: auto; position: static;}
-  #feature-image img{ max-width: 100%; -webkit-transform: rotate(0deg);}
+  #feature-image img{ max-width: 100%; transform: rotate(0deg); -webkit-transform: rotate(0deg);}
   #feature-content{ margin-top: 2em;}
   #feature-title{ margin-bottom: 0.25em;}
   #bullets-list li{ border-bottom: 1px solid #e5e5e5; box-shadow: none; clear: both; float: none; padding-bottom: 20px; text-align: center; width: auto;}

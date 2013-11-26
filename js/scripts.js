@@ -1,6 +1,10 @@
 jQuery(document).ready(function ($) {
 
 	var $triggers = [
+		[$('#staying-afloat'), $('#staying-afloat img')],
+		[$('#bullets'), $('#bullet-thumper-240')],
+		[$('#abbey-road'), $('#abbey-road-text')],
+		[$('#immigration'), $('#immigration-last')],
 		[$('#transformers'), $('#transformers-ticket-date')],
 		[$('#overflow'), $('#overflow-last')]
 	];
