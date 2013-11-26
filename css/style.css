@@ -9,7 +9,7 @@ q:before, q:after{ content: '';}
 abbr, acronym{ border: 0;}
 
 html{ overflow-x: hidden; overflow-y: scroll;}
-body{ background: white; color: black; font: 16px/1 Merriweather, Georgia, serif;}
+body{ background: white; color: black; font: 16px/1 Oswald, Arial, sans-serif;}
 a{ color: #449fdb; cursor: pointer; text-decoration: none;}
 a:hover{ text-decoration: none;}
 img{ max-width: 100%;}
@@ -18,7 +18,7 @@ img{ max-width: 100%;}
 
 #title, #barbie-text, #staying-afloat-text, #bullets-title em, #overflow, footer p{ font-family: Lato, Arial, sans-serif;}
 #volume, #barbie-title, #transformers-summary{ font-family: Lora, Georgia, serif;}
-#feature-title, #staying-afloat-title, #bullets-title strong, #bullets-list, #abbey-road-title, #immigration-title, #immigration-subtitle, #transformers{ font-family: Oswald, Arial, sans-serif;}
+#feature-label, #feature-text, #abbey-road-text, #immigration-content, footer address{ font-family: Merriweather, Georgia, serif; font-weight: 300;}
 
 /* Shared */
 
@@ -36,7 +36,7 @@ img{ max-width: 100%;}
 #title-background,
 #barbie-background{ background: #cdc9dd; height: 698px; left: 0; margin-left: -57px; position: absolute; top: 0; width: 50%; z-index: 10;}
 #barbie-background{ background: url(barbie-floor.png) repeat-x center top; height: 310px; top: 698px;z-index: 20;}
-#title{ color: white; font-size: 279px; font-weight: 200; left: -39px; letter-spacing: 0.04em; line-height: 227px; position: absolute; text-transform: uppercase; top: 33px; z-index: 70;}
+#title{ color: white; font-size: 279px; font-weight: 100; left: -39px; letter-spacing: 0.04em; line-height: 227px; position: absolute; text-transform: uppercase; top: 33px; z-index: 70;}
 #title span{ margin: 0 -14px 0 -30px;}
 #volume{ color: #b0aeb8; font-size: 12px; letter-spacing: 0.2em; position: absolute; right: 0; top: 140px; text-transform: uppercase; z-index: 70;}
 
@@ -50,11 +50,11 @@ img{ max-width: 100%;}
 #feature-title{ position: relative; z-index: 60;}
 #feature-label{ color: #cbb8a0; font-size: 13px; letter-spacing: 0.2em; margin-bottom: 5px; text-transform: uppercase;}
 #feature-title{ color: #fdcd84; font-size: 75px; line-height: 79px; margin-bottom: 20px; text-transform: uppercase;}
-#feature-text{ font-size: 25px; font-weight: 200; letter-spacing: -0.02em; line-height: 33px;}
+#feature-text{ font-size: 25px; letter-spacing: -0.02em; line-height: 33px;}
 
 #barbie{ float: left; margin-top: 696px; padding-top: 83px; position: relative; text-align: center; width: 410px; z-index: 80;}
 #barbie-image{ left: -57px; position: absolute; top: -249px; z-index: 80;}
-#barbie-title{ color: #5f5d66; font-size: 36px; font-style: italic; font-weight: bold; margin-bottom: 15px; position: relative; z-index: 90;}
+#barbie-title{ color: #5f5d66; font-size: 36px; font-style: italic; font-weight: 700; margin-bottom: 15px; position: relative; z-index: 90;}
 #barbie-text{ color: #6e6c77; font-size: 19px; letter-spacing: -0.02em; line-height: 27px; padding: 0 20px; position: relative; z-index: 90;}
 
 #staying-afloat{ clear: both; float: left; margin-bottom: -27px; position: relative; text-align: right; width: 160px; z-index: 30;}
@@ -65,14 +65,15 @@ img{ max-width: 100%;}
 
 #bullets{ float: right; width: 800px;}
 #bullets-title{ border: solid #e5e5e5; border-width: 1px 0; font-size: 12px; overflow: hidden; padding: 15px 0; text-align: center; text-transform: uppercase;}
-#bullets-title strong{ color: #a97d35; font-size: 15px; font-weight: normal; letter-spacing: 0.04em; margin-right: 5px; vertical-align: middle;}
-#bullets-title em{ color: #e0c167; font-style: normal; font-weight: bold; letter-spacing: 0.08em;}
+#bullets-title strong{ color: #a97d35; font-size: 15px; font-weight: 400; letter-spacing: 0.04em; margin-right: 5px; vertical-align: middle;}
+#bullets-title em{ color: #e0c167; font-style: normal; font-weight: 700; letter-spacing: 0.08em;}
 #bullets-list{ padding-top: 16px;}
 #bullets-list li{ box-shadow: 1px 0 0 #e5e5e5; color: #e0e0e0; float: left; padding-bottom: 86px; position: relative; width: 20%;}
 #bullets-list li:last-child{ box-shadow: none;}
 #bullets-list img{ position: relative; z-index: 10;}
 #bullets-list p{ bottom: 0; font-size: 28px; left: 0; letter-spacing: -0.025em; line-height: 1; position: absolute; text-align: center; width: 100%;}
 #bullets-list p span{ display: block; margin-bottom: 0.05em;}
+#bullets-list p span span{ display: inline; margin-bottom: 0;}
 #bullets-list .bullet-size{ font-size: 79px;}
 #bullets-list .bullet-name{ text-transform: uppercase;}
 #bullets-list .bullet-weight{ font-size: 32px; margin-bottom: 0;}
@@ -97,7 +98,7 @@ img{ max-width: 100%;}
 #abbey-road-map{ background: none; content: ''; height: 200px; overflow: hidden; width: 200px;}
 #abbey-road-map:before{ background: url(page-corner.png); content: ' '; z-index: 10;}
 #abbey-road-map:after{ background: url(corner-shadow.png); content: ' ';}
-#abbey-road-text{ background: #71625a; color: white; font-size: 26px; font-weight: 200; letter-spacing: -0.02em; line-height: 35px; padding: 25px;}
+#abbey-road-text{ background: #71625a; color: white; font-size: 26px; letter-spacing: -0.02em; line-height: 35px; padding: 25px;}
 #abbey-road-text small,
 #abbey-road-text small a{ color: #b8b1ad;}
 #abbey-road-text small{ display: block; font-size: 18px; margin-top: 1em;}
@@ -105,7 +106,7 @@ img{ max-width: 100%;}
 
 #immigration{ float: left; position: relative; width: 720px;}
 #immigration:after{ background: #e5e5e5; bottom: 110px; content: ' '; height: 100%; position: absolute; right: 0; width: 1px; z-index: 10;}
-#immigration-people{ height: 152px; position: relative;}
+#immigration-people{ position: relative;}
 #immigration-people img{ float: left; position: relative;}
 #immigration-people img:nth-child(2){ left: 1px;}
 #immigration-people img:nth-child(3){ left: 4px;}
@@ -115,11 +116,11 @@ img{ max-width: 100%;}
 #immigration-subtitle:before,
 #immigration-subtitle:after{ background: black; content: ' '; height: 21px; left: 0; position: absolute; top: 0; width: 700px;}
 #immigration-subtitle:after{ bottom: 0; height: 3px; top: auto;}
-#immigration-content{ font-size: 22px; font-weight: 200; letter-spacing: -0.02em; line-height: 29px; padding-right: 20px;}
+#immigration-content{ font-size: 22px; letter-spacing: -0.02em; line-height: 29px; padding-right: 20px;}
 #immigration-content p{ display: inline; position: relative;}
 #immigration-content p:after{ content: ' • '; font-size: 41px; vertical-align: bottom;}
 #immigration-content p:last-child:after{ display: none;}
-#immigration-content strong{ font-weight: 800;}
+#immigration-content strong{ font-weight: 900;}
 
 #transformers{ background: #3a83bb; color: white; float: right; margin-top: 15px; position: relative; text-align: center; text-transform: uppercase; width: 225px; z-index: 30;}
 #transformers-image{ margin: -66px 0 20px; position: relative;}
@@ -134,7 +135,7 @@ img{ max-width: 100%;}
 #transformers-rating{ border: dashed #234f70; border-width: 2px 0; box-shadow: 0 5px 0 #3476a8 inset,  0 -5px 0 #3476a8 inset; padding: 20px 0 25px 15px;}
 #transformers-rating-label{ color: #88aed1; float: left; font-size: 14px;}
 #transformers-rating-label span{ display: block; font-size: 32px;}
-#transformers-rating-value{ float: right; font-size: 54px; font-weight: normal; margin-bottom: 15px; position: relative; top: -5px;}
+#transformers-rating-value{ float: right; font-size: 54px; font-weight: 400; margin-bottom: 15px; position: relative; top: -5px;}
 #transformers-rating-value span{ display: inline-block; position: relative; right: 5px;}
 #transformers-rating-bar{ clear: both; height: 8px; margin-right: 15px; position: relative;}
 #transformers-rating-bar-value{ background: #619cc9; clear: both; height: 100%; position: relative;}
@@ -157,8 +158,8 @@ img{ max-width: 100%;}
 #overflow-content p:nth-child(2){ margin-bottom: 28px;}
 #overflow-content p:last-child{ margin-left: 120px;}
 
-footer{ border-top: 1px solid #e5e5e5; clear: both; color: #989898; font-size: 13px; font-weight: 200; letter-spacing: -0.01em; line-height: 19px; padding: 20px 0; text-align: right;}
-footer strong{ font-weight: 800;}
+footer{ border-top: 1px solid #e5e5e5; clear: both; color: #989898; font-size: 13px; letter-spacing: -0.01em; line-height: 19px; padding: 20px 0; text-align: right;}
+footer address strong{ font-weight: 900;}
 footer p{ color: #bababa; float: left; font-size: 17px; font-weight: 400; text-align: left;}
 footer p strong{ color: #666;}
 
@@ -416,19 +417,19 @@ footer p:hover, footer address:hover{ color: #666;}
 #overflow-content p,
 .animated{ -webkit-animation-duration: 1000ms; -webkit-animation-fill-mode: both; -webkit-animation-timing-function: ease;}
 
-.start #title-background{ -webkit-animation-name: background; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-.start #title{ -webkit-animation-delay: 250ms; -webkit-animation-name: right; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-.start #volume{ -webkit-animation-delay: 500ms; -webkit-animation-name: left; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-.start #feature-image img{ -webkit-animation-delay: 1000ms; -webkit-animation-name: rotate-image;}
-.start #feature-image:after{ -webkit-animation-delay: 1000ms; -webkit-animation-name: up;}
-.start #feature-content:before{ -webkit-animation-delay: 1000ms; -webkit-animation-name: fade-in;}
-.start #feature-label{ -webkit-animation-delay: 1250ms; -webkit-animation-name: down;}
-.start #feature-title{ -webkit-animation-delay: 1500ms; -webkit-animation-name: down;}
-.start #feature-text{ -webkit-animation-delay: 1750ms; -webkit-animation-name: down;}
-.start #barbie-background{ -webkit-animation-delay: 1750ms; -webkit-animation-name: background;}
-.start #barbie-image{ -webkit-animation-delay: 2000ms; -webkit-animation-name: down;}
-.start #barbie-title{ -webkit-animation-delay: 2250ms; -webkit-animation-name: down;}
-.start #barbie-text{ -webkit-animation-delay: 2500ms; -webkit-animation-name: down;}
+#title-background{ -webkit-animation-name: background; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+#title{ -webkit-animation-delay: 250ms; -webkit-animation-name: right; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+#volume{ -webkit-animation-delay: 500ms; -webkit-animation-name: left; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+#feature-image img{ -webkit-animation-delay: 1000ms; -webkit-animation-name: rotate-image;}
+#feature-image:after{ -webkit-animation-delay: 1000ms; -webkit-animation-name: up;}
+#feature-content:before{ -webkit-animation-delay: 1000ms; -webkit-animation-name: fade-in;}
+#feature-label{ -webkit-animation-delay: 1250ms; -webkit-animation-name: down;}
+#feature-title{ -webkit-animation-delay: 1500ms; -webkit-animation-name: down;}
+#feature-text{ -webkit-animation-delay: 1750ms; -webkit-animation-name: down;}
+#barbie-background{ -webkit-animation-delay: 1750ms; -webkit-animation-name: background;}
+#barbie-image{ -webkit-animation-delay: 2000ms; -webkit-animation-name: down;}
+#barbie-title{ -webkit-animation-delay: 2250ms; -webkit-animation-name: down;}
+#barbie-text{ -webkit-animation-delay: 2500ms; -webkit-animation-name: down;}
 .start #staying-afloat-title{ -webkit-animation-delay: 0ms; -webkit-animation-name: down;}
 .start #staying-afloat-text{ -webkit-animation-delay: 250ms; -webkit-animation-name: down;}
 .start#staying-afloat img{ -webkit-animation-delay: 500ms; -webkit-animation-name: boots;}
@@ -459,7 +460,7 @@ footer p:hover, footer address:hover{ color: #666;}
 .start #immigration-content p:nth-child(3){ -webkit-animation-delay: 2000ms;}
 .start #immigration-content p:nth-child(4){ -webkit-animation-delay: 2250ms;}
 .start #immigration-content p:nth-child(5){ -webkit-animation-delay: 2500ms;}
-.start #immigration:after{ -webkit-animation-delay: 5250ms; -webkit-animation-name: fade-in;}
+.start#immigration:after{ -webkit-animation-delay: 5250ms; -webkit-animation-name: fade-in;}
 .start#transformers{ -webkit-animation-delay: 2500ms; -webkit-animation-name: fade-in;}
 .start #transformers-image img{ -webkit-animation-delay: 2750ms; -webkit-animation-name: full-down; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
 .start #transformers-image:before{ -webkit-animation-delay: 2750ms; -webkit-animation-name: grow; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
@@ -483,9 +484,9 @@ footer p:hover, footer address:hover{ color: #666;}
 .start #overflow-content p:first-child{ -webkit-animation-delay: 250ms; -webkit-animation-name: overflow-1;}
 .start #overflow-content p:nth-child(2){ -webkit-animation-delay: 500ms; -webkit-animation-name: overflow-2;}
 .start #overflow-content p:last-child{ -webkit-animation-delay: 750ms; -webkit-animation-name: overflow-3;}
-footer.start{ -webkit-animation-delay: 0ms; -webkit-animation-name: full-up; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
-footer.start p{ -webkit-animation-delay: 1000ms; -webkit-animation-name: full-up; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
-footer.start address{ -webkit-animation-delay: 1500ms; -webkit-animation-name: full-up; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+footer.start{ -webkit-animation-delay: 0ms; -webkit-animation-name: scale-y; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+footer.start p{ -webkit-animation-delay: 1000ms; -webkit-animation-name: scale-y; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+footer.start address{ -webkit-animation-delay: 1500ms; -webkit-animation-name: scale-y; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
 
 /* Hover animations */
 
@@ -500,10 +501,92 @@ footer.start address{ -webkit-animation-delay: 1500ms; -webkit-animation-name: f
 
 /* Responsiveness */
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1000px) {
+  .wrap{ width: 880px;}
+  #feature{ width: 470px;}
+  #feature-image{ right: 73px;}
+  #feature-content:before{ left: -44px;}
+  #barbie{ width: 370px;}
+  #bullets{ width: 720px;}
+  #bullets-list li span span{ font-size: 90%;}
+  #immigration{ width: 640px;}
+  #immigration-people img{ width: 20%;}
+  #immigration-title{ font-size: 72px;}
+  #immigration-subtitle{ font-size: 34px;}
+  #immigration-subtitle:before, #immigration-subtitle:after{ max-width: 620px;}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 920px) {
+  .wrap{ width: 800px;}
+  #feature{ margin-right: 30px; width: 390px;}
+  #barbie{ width: 330px;}
+  #bullets{ width: 640px;}
+  #bullets-list li span span{ font-size: 80%;}
+  #immigration{ width: 560px;}
+  #immigration-title{ font-size: 63px;}
+  #immigration-subtitle{ font-size: 30px;}
+  #immigration-subtitle:before, #immigration-subtitle:after{ max-width: 540px;}
+}
+
+@media only screen and (max-width: 860px) {
+  #barbie-background,
+  #immigration:after,
+  #transformers-image:after
+  { display: none;}
+  #feature,
+  #barbie,
+  #staying-afloat,
+  #bullets,
+  #immigration,
+  #transformers,
+  footer
+  { float: none; margin: 0 20px; width: auto;}
+  .wrap{ width: auto;}
+  #title{ top: 0;}
+  #title-background{ height: 548px;}
+  #feature{ padding-top: 189px;}
+  #feature-image{ right: 20px;}
+  #feature-title{ margin-bottom: 100px;}
+  #barbie{ background: url(barbie-floor.png) repeat-x center 240px;  margin: 20px 0 0; padding-top: 0;}
+  #barbie-image{ position: static;}
+  #staying-afloat{ text-align: left;}
+  #staying-afloat-text{ margin-left: 0; margin-right: 0;}
+  #bullets-list{ float: left; padding-bottom: 60px; width: 100%;}
+  #bullets-list li span span{ font-size: 70%;}
+  #immigration{ margin-bottom: 20px;}
+  #immigration-subtitle:before, #immigration-subtitle:after{ max-width: 100%;}
+  #transformers{ margin: 0;}
+  #transformers-image{ margin: 0 auto 40px; width: 185px;}
+  #overflow-title{ margin-bottom: -80px; text-align: center;}
+  #overflow-title img{ height: auto; margin-left: 0; max-width: 100%; position: static; width: auto;}
+  #overflow-content{ margin: 0 20px; padding-top: 0;}
+  #overflow-content p,
+  #overflow-content p:first-child{ margin: 1em 0; width: 80%;}
+}
+
+@media only screen and (max-width: 740px) {
+  #title-background,
+  #feature-image:after,
+  #feature-content:before
+  { display: none;}
+  #title{ background: #cdc9dd; position: static;}
+  #volume{ background: white; padding: 1em;}
+  #feature{ padding-top: 0;}
+  #feature-image{ height: auto; position: static;}
+  #feature-image img{ max-width: 100%; -webkit-transform: rotate(0deg);}
+  #feature-content{ margin-top: 2em;}
+  #feature-title{ margin-bottom: 0.25em;}
+  #bullets-list li{ border-bottom: 1px solid #e5e5e5; box-shadow: none; clear: both; float: none; padding-bottom: 20px; text-align: center; width: auto;}
+  #bullets-list li p{ position: static;}
+  #bullets-list li span span{ font-size: 100%;}
+  #overflow-content p:last-child{ margin-left: 10%;}
+}
+
+@media only screen and (max-width: 480px) {
+  #title{ font-size: 60px; line-height: 1; padding: 2em; text-align: center;}
+  #title br{ display: none;}
+  #title span{ margin: 0;}
+  #volume{ padding: 2em; position: static; text-align: center;}
 }
 
 
