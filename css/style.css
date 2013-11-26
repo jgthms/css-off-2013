@@ -326,6 +326,12 @@ footer p:hover, footer address:hover{ color: #666;}
   100%{ -webkit-transform: translateY(0);}
 }
 
+@-webkit-keyframes gentle-bounce{
+  0%{ -webkit-transform: translateY(0);}
+  50%{ -webkit-transform: translateY(-5px);}
+  100%{ -webkit-transform: translateY(0);}
+}
+
 @-webkit-keyframes bounce-shadow{
   0%{ -webkit-transform: scale(1, 1);}
   50%{ -webkit-transform: scale(0.75, 0.75);}
@@ -410,86 +416,87 @@ footer p:hover, footer address:hover{ color: #666;}
 #overflow-content p,
 .animated{ -webkit-animation-duration: 1000ms; -webkit-animation-fill-mode: both; -webkit-animation-timing-function: ease;}
 
-#title-background{ -webkit-animation-name: background; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#title{ -webkit-animation-delay: 250ms; -webkit-animation-name: right; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#volume{ -webkit-animation-delay: 500ms; -webkit-animation-name: left; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#feature-image img{ -webkit-animation-delay: 1000ms; -webkit-animation-name: rotate-image;}
-#feature-image:after{ -webkit-animation-delay: 1000ms; -webkit-animation-name: up;}
-#feature-content:before{ -webkit-animation-delay: 1000ms; -webkit-animation-name: fade-in;}
-#feature-label{ -webkit-animation-delay: 1250ms; -webkit-animation-name: down;}
-#feature-title{ -webkit-animation-delay: 1500ms; -webkit-animation-name: down;}
-#feature-text{ -webkit-animation-delay: 1750ms; -webkit-animation-name: down;}
-#barbie-background{ -webkit-animation-delay: 1750ms; -webkit-animation-name: background;}
-#barbie-image{ -webkit-animation-delay: 2000ms; -webkit-animation-name: down;}
-#barbie-title{ -webkit-animation-delay: 2250ms; -webkit-animation-name: down;}
-#barbie-text{ -webkit-animation-delay: 2500ms; -webkit-animation-name: down;}
-#staying-afloat-title{ -webkit-animation-delay: 0ms; -webkit-animation-name: down;}
-#staying-afloat-text{ -webkit-animation-delay: 250ms; -webkit-animation-name: down;}
-#staying-afloat img{ -webkit-animation-delay: 500ms; -webkit-animation-name: boots;}
-#bullets-title{ -webkit-animation-delay: 750ms; -webkit-animation-name: scale-x; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#bullets-list li{ -webkit-animation-delay: 1250ms; -webkit-animation-name: bullets-list; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#bullets-list li:nth-child(2){ -webkit-animation-delay: 1500ms;}
-#bullets-list li:nth-child(3){ -webkit-animation-delay: 1750ms;}
-#bullets-list li:nth-child(4){ -webkit-animation-delay: 2000ms;}
-#bullets-list li:nth-child(5){ -webkit-animation-delay: 2250ms;}
-#abbey-road-title{ -webkit-animation-delay: 0ms; -webkit-animation-name: scale-y; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#abbey-road-image{ -webkit-animation-delay: 250ms; -webkit-animation-name: fade-in;}
-#abbey-road-map{ -webkit-animation-delay: 1000ms; -webkit-animation-name: corner;}
-#abbey-road-text{ -webkit-animation-delay: 750ms; -webkit-animation-name: down;}
-#immigration-people img{ -webkit-animation-delay: 0ms; -webkit-animation-name: down;}
-#immigration-people img:nth-child(2){ -webkit-animation-delay: 250ms;}
-#immigration-people img:nth-child(3){ -webkit-animation-delay: 500ms;}
-#immigration-people img:nth-child(4){ -webkit-animation-delay: 750ms;}
-#immigration-title,
-#immigration-subtitle{ -webkit-animation-name: scale-y; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#immigration-title{ -webkit-animation-delay: 750ms;}
-#immigration-subtitle{ -webkit-animation-delay: 1000ms;}
-#immigration-subtitle:before,
-#immigration-subtitle:after{ -webkit-animation-name: immigration-borders; -webkit-animation-timing-function: cubic-bezier(0.8, 0.2, 0.2, 0.8);}
-#immigration-subtitle:before{ -webkit-animation-delay: 1000ms;}
-#immigration-subtitle:after{ -webkit-animation-delay: 1250ms;}
-#immigration-content p{ -webkit-animation-delay: 1500ms; -webkit-animation-name: up-inline;}
-#immigration-content p:nth-child(2){ -webkit-animation-delay: 1750ms;}
-#immigration-content p:nth-child(3){ -webkit-animation-delay: 2000ms;}
-#immigration-content p:nth-child(4){ -webkit-animation-delay: 2250ms;}
-#immigration-content p:nth-child(5){ -webkit-animation-delay: 2500ms;}
-#immigration:after{ -webkit-animation-delay: 5250ms; -webkit-animation-name: fade-in;}
-#transformers{ -webkit-animation-delay: 2500ms; -webkit-animation-name: fade-in;}
-#transformers-image img{ -webkit-animation-delay: 2750ms; -webkit-animation-name: full-down; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
-#transformers-image:before{ -webkit-animation-delay: 2750ms; -webkit-animation-name: grow; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
-#transformers-image:after{ -webkit-animation-delay: 2750ms; -webkit-animation-name: fade-in;}
-#transformers-title{ -webkit-animation-delay: 3500ms; -webkit-animation-name: transformers-title;}
-#transformers-title span,
-#transformers-title em{ -webkit-animation-name: scale-y; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#transformers-title span{ -webkit-animation-delay: 3000ms;}
-#transformers-title em{ -webkit-animation-delay: 3250ms;}
-#transformers-summary{ -webkit-animation-delay: 3750ms; -webkit-animation-name: up;}
-#transformers-rating{ -webkit-animation-delay: 4000ms; -webkit-animation-name: scale-y;}
-#transformers-rating-bar-value{ -webkit-animation-delay: 4250ms; -webkit-animation-name: progress;}
-#transformers-rating-bar-value span{ -webkit-animation-delay: 4500ms; -webkit-animation-name: progress-20;}
-#transformers-ticket-title,
-#transformers-ticket p{ -webkit-animation-delay: 4500ms; -webkit-animation-name: scale-y;}
-#transformers-ticket p{ -webkit-animation-delay: 4625ms;}
-#transformers-ticket p:nth-child(3){ -webkit-animation-delay: 4750ms;}
-#transformers-ticket p:nth-child(4){ -webkit-animation-delay: 4875ms;}
-#transformers-ticket:after{ -webkit-animation-delay: 5000ms; -webkit-animation-name: up;}
-#overflow-title{ -webkit-animation-delay: 0ms; -webkit-animation-name: up;}
-#overflow-content p:first-child{ -webkit-animation-delay: 250ms; -webkit-animation-name: overflow-1;}
-#overflow-content p:nth-child(2){ -webkit-animation-delay: 500ms; -webkit-animation-name: overflow-2;}
-#overflow-content p:last-child{ -webkit-animation-delay: 750ms; -webkit-animation-name: overflow-3;}
-footer{ -webkit-animation-delay: 0ms; -webkit-animation-name: full-up; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
-footer p{ -webkit-animation-delay: 1000ms; -webkit-animation-name: full-up; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
-footer address{ -webkit-animation-delay: 1500ms; -webkit-animation-name: full-up; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+.start #title-background{ -webkit-animation-name: background; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #title{ -webkit-animation-delay: 250ms; -webkit-animation-name: right; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #volume{ -webkit-animation-delay: 500ms; -webkit-animation-name: left; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #feature-image img{ -webkit-animation-delay: 1000ms; -webkit-animation-name: rotate-image;}
+.start #feature-image:after{ -webkit-animation-delay: 1000ms; -webkit-animation-name: up;}
+.start #feature-content:before{ -webkit-animation-delay: 1000ms; -webkit-animation-name: fade-in;}
+.start #feature-label{ -webkit-animation-delay: 1250ms; -webkit-animation-name: down;}
+.start #feature-title{ -webkit-animation-delay: 1500ms; -webkit-animation-name: down;}
+.start #feature-text{ -webkit-animation-delay: 1750ms; -webkit-animation-name: down;}
+.start #barbie-background{ -webkit-animation-delay: 1750ms; -webkit-animation-name: background;}
+.start #barbie-image{ -webkit-animation-delay: 2000ms; -webkit-animation-name: down;}
+.start #barbie-title{ -webkit-animation-delay: 2250ms; -webkit-animation-name: down;}
+.start #barbie-text{ -webkit-animation-delay: 2500ms; -webkit-animation-name: down;}
+.start #staying-afloat-title{ -webkit-animation-delay: 0ms; -webkit-animation-name: down;}
+.start #staying-afloat-text{ -webkit-animation-delay: 250ms; -webkit-animation-name: down;}
+.start#staying-afloat img{ -webkit-animation-delay: 500ms; -webkit-animation-name: boots;}
+.start #bullets-title{ -webkit-animation-delay: 750ms; -webkit-animation-name: scale-x; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #bullets-list li{ -webkit-animation-delay: 1250ms; -webkit-animation-name: bullets-list; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+.start #bullets-list li:nth-child(2){ -webkit-animation-delay: 1500ms;}
+.start #bullets-list li:nth-child(3){ -webkit-animation-delay: 1750ms;}
+.start #bullets-list li:nth-child(4){ -webkit-animation-delay: 2000ms;}
+.start #bullets-list li:nth-child(5){ -webkit-animation-delay: 2250ms;}
+.start #abbey-road-title{ -webkit-animation-delay: 0ms; -webkit-animation-name: scale-y; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #abbey-road-image{ -webkit-animation-delay: 250ms; -webkit-animation-name: fade-in;}
+.start #abbey-road-map{ -webkit-animation-delay: 1000ms; -webkit-animation-name: corner;}
+.start #abbey-road-text{ -webkit-animation-delay: 750ms; -webkit-animation-name: down;}
+.start #immigration-people img{ -webkit-animation-delay: 0ms; -webkit-animation-name: down;}
+.start #immigration-people img:nth-child(2){ -webkit-animation-delay: 250ms;}
+.start #immigration-people img:nth-child(3){ -webkit-animation-delay: 500ms;}
+.start #immigration-people img:nth-child(4){ -webkit-animation-delay: 750ms;}
+.start #immigration-title,
+.start #immigration-subtitle{ -webkit-animation-name: scale-y; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #immigration-title{ -webkit-animation-delay: 750ms;}
+.start #immigration-subtitle{ -webkit-animation-delay: 1000ms;}
+.start #immigration-subtitle:before,
+.start #immigration-subtitle:after{ -webkit-animation-name: immigration-borders; -webkit-animation-timing-function: cubic-bezier(0.8, 0.2, 0.2, 0.8);}
+.start #immigration-subtitle:before{ -webkit-animation-delay: 1000ms;}
+.start #immigration-subtitle:after{ -webkit-animation-delay: 1250ms;}
+.start #immigration-content p{ -webkit-animation-delay: 1500ms; -webkit-animation-name: up-inline;}
+.start #immigration-content p:nth-child(2){ -webkit-animation-delay: 1750ms;}
+.start #immigration-content p:nth-child(3){ -webkit-animation-delay: 2000ms;}
+.start #immigration-content p:nth-child(4){ -webkit-animation-delay: 2250ms;}
+.start #immigration-content p:nth-child(5){ -webkit-animation-delay: 2500ms;}
+.start #immigration:after{ -webkit-animation-delay: 5250ms; -webkit-animation-name: fade-in;}
+.start#transformers{ -webkit-animation-delay: 2500ms; -webkit-animation-name: fade-in;}
+.start #transformers-image img{ -webkit-animation-delay: 2750ms; -webkit-animation-name: full-down; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+.start #transformers-image:before{ -webkit-animation-delay: 2750ms; -webkit-animation-name: grow; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+.start #transformers-image:after{ -webkit-animation-delay: 2750ms; -webkit-animation-name: fade-in;}
+.start #transformers-title{ -webkit-animation-delay: 3500ms; -webkit-animation-name: transformers-title;}
+.start #transformers-title span,
+.start #transformers-title em{ -webkit-animation-name: scale-y; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #transformers-title span{ -webkit-animation-delay: 3000ms;}
+.start #transformers-title em{ -webkit-animation-delay: 3250ms;}
+.start #transformers-summary{ -webkit-animation-delay: 3750ms; -webkit-animation-name: up;}
+.start #transformers-rating{ -webkit-animation-delay: 4000ms; -webkit-animation-name: scale-y;}
+.start #transformers-rating-bar-value{ -webkit-animation-delay: 4250ms; -webkit-animation-name: progress;}
+.start #transformers-rating-bar-value span{ -webkit-animation-delay: 4500ms; -webkit-animation-name: progress-20;}
+.start #transformers-ticket-title,
+.start #transformers-ticket p{ -webkit-animation-delay: 4500ms; -webkit-animation-name: scale-y;}
+.start #transformers-ticket p{ -webkit-animation-delay: 4625ms;}
+.start #transformers-ticket p:nth-child(3){ -webkit-animation-delay: 4750ms;}
+.start #transformers-ticket p:nth-child(4){ -webkit-animation-delay: 4875ms;}
+.start #transformers-ticket:after{ -webkit-animation-delay: 5000ms; -webkit-animation-name: up;}
+.start #overflow-title{ -webkit-animation-delay: 0ms; -webkit-animation-name: up;}
+.start #overflow-content p:first-child{ -webkit-animation-delay: 250ms; -webkit-animation-name: overflow-1;}
+.start #overflow-content p:nth-child(2){ -webkit-animation-delay: 500ms; -webkit-animation-name: overflow-2;}
+.start #overflow-content p:last-child{ -webkit-animation-delay: 750ms; -webkit-animation-name: overflow-3;}
+footer.start{ -webkit-animation-delay: 0ms; -webkit-animation-name: full-up; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+footer.start p{ -webkit-animation-delay: 1000ms; -webkit-animation-name: full-up; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
+footer.start address{ -webkit-animation-delay: 1500ms; -webkit-animation-name: full-up; -webkit-animation-timing-function: cubic-bezier(0, 1.5, 0.25, 1);}
 
 /* Hover animations */
 
-/*
-#transformers-image:hover img,
-#transformers-image:hover:before,
-#transformers-image:hover:after{ -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear;}
-#transformers-image:hover img{ -webkit-animation-name: bounce;}
-#transformers-image:hover:before{ -webkit-animation-name: bounce-shadow;}
-#transformers-image:hover:after{ -webkit-animation-name: bounce-fade;}*/
+.stop #transformers-image:hover img,
+.stop #transformers-image:hover:before,
+.stop #transformers-image:hover:after,
+.stop#overflow:hover #overflow-title{ -webkit-animation-delay: 0ms; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear;}
+.stop #transformers-image:hover img{ -webkit-animation-name: bounce;}
+.stop#overflow:hover #overflow-title{ -webkit-animation-duration: 3000ms; -webkit-animation-name: gentle-bounce;}
+.stop #transformers-image:hover:before{ -webkit-animation-name: bounce-shadow;}
+.stop #transformers-image:hover:after{ -webkit-animation-name: bounce-fade;}
 
 /* Responsiveness */
 
