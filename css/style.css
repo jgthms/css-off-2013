@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
 q:before, q:after{ content: '';}
 abbr, acronym{ border: 0;}
 
-html{ overflow-x: hidden; overflow-y: scroll;}
+html{ min-width: 300px; overflow-x: hidden; overflow-y: scroll;}
 body{ background: white; color: black; font: 16px/1 Oswald, Arial, sans-serif;}
 a{ color: #449fdb; cursor: pointer; text-decoration: none;}
 a:hover{ text-decoration: none;}
@@ -417,19 +417,19 @@ footer p:hover, footer address:hover{ color: #666;}
 #overflow-content p,
 .animated{ -webkit-animation-duration: 1000ms; -webkit-animation-fill-mode: both; -webkit-animation-timing-function: ease;}
 
-#title-background{ -webkit-animation-name: background; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#title{ -webkit-animation-delay: 250ms; -webkit-animation-name: right; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#volume{ -webkit-animation-delay: 500ms; -webkit-animation-name: left; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
-#feature-image img{ -webkit-animation-delay: 1000ms; -webkit-animation-name: rotate-image;}
-#feature-image:after{ -webkit-animation-delay: 1000ms; -webkit-animation-name: up;}
-#feature-content:before{ -webkit-animation-delay: 1000ms; -webkit-animation-name: fade-in;}
-#feature-label{ -webkit-animation-delay: 1250ms; -webkit-animation-name: down;}
-#feature-title{ -webkit-animation-delay: 1500ms; -webkit-animation-name: down;}
-#feature-text{ -webkit-animation-delay: 1750ms; -webkit-animation-name: down;}
-#barbie-background{ -webkit-animation-delay: 1750ms; -webkit-animation-name: background;}
-#barbie-image{ -webkit-animation-delay: 2000ms; -webkit-animation-name: down;}
-#barbie-title{ -webkit-animation-delay: 2250ms; -webkit-animation-name: down;}
-#barbie-text{ -webkit-animation-delay: 2500ms; -webkit-animation-name: down;}
+.start #title-background{ -webkit-animation-name: background; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #title{ -webkit-animation-delay: 250ms; -webkit-animation-name: right; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #volume{ -webkit-animation-delay: 500ms; -webkit-animation-name: left; -webkit-animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);}
+.start #feature-image img{ -webkit-animation-delay: 1000ms; -webkit-animation-name: rotate-image;}
+.start #feature-image:after{ -webkit-animation-delay: 1000ms; -webkit-animation-name: up;}
+.start #feature-content:before{ -webkit-animation-delay: 1000ms; -webkit-animation-name: fade-in;}
+.start #feature-label{ -webkit-animation-delay: 1250ms; -webkit-animation-name: down;}
+.start #feature-title{ -webkit-animation-delay: 1500ms; -webkit-animation-name: down;}
+.start #feature-text{ -webkit-animation-delay: 1750ms; -webkit-animation-name: down;}
+.start #barbie-background{ -webkit-animation-delay: 1750ms; -webkit-animation-name: background;}
+.start #barbie-image{ -webkit-animation-delay: 2000ms; -webkit-animation-name: down;}
+.start #barbie-title{ -webkit-animation-delay: 2250ms; -webkit-animation-name: down;}
+.start #barbie-text{ -webkit-animation-delay: 2500ms; -webkit-animation-name: down;}
 .start #staying-afloat-title{ -webkit-animation-delay: 0ms; -webkit-animation-name: down;}
 .start #staying-afloat-text{ -webkit-animation-delay: 250ms; -webkit-animation-name: down;}
 .start#staying-afloat img{ -webkit-animation-delay: 500ms; -webkit-animation-name: boots;}
@@ -558,7 +558,7 @@ footer.start address{ -webkit-animation-delay: 1500ms; -webkit-animation-name: s
   #transformers{ margin: 0;}
   #transformers-image{ margin: 0 auto 40px; width: 185px;}
   #overflow-title{ margin-bottom: -80px; text-align: center;}
-  #overflow-title img{ height: auto; margin-left: 0; max-width: 100%; position: static; width: auto;}
+  #overflow-title img{ height: auto; margin-left: -3%; max-width: 100%; position: static; width: auto;}
   #overflow-content{ margin: 0 20px; padding-top: 0;}
   #overflow-content p,
   #overflow-content p:first-child{ margin: 1em 0; width: 80%;}
@@ -583,10 +583,13 @@ footer.start address{ -webkit-animation-delay: 1500ms; -webkit-animation-name: s
 }
 
 @media only screen and (max-width: 480px) {
-  #title{ font-size: 60px; line-height: 1; padding: 2em; text-align: center;}
+  #title{ font-size: 60px; line-height: 1; padding: 2em 0; text-align: center;}
   #title br{ display: none;}
   #title span{ margin: 0;}
   #volume{ padding: 2em; position: static; text-align: center;}
+  #feature-title{ font-size: 45px; line-height: 1;}
+  footer{ text-align: left;}
+  footer p{ float: none; margin-bottom: 1em;}
 }
 
 
